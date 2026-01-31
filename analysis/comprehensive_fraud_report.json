@@ -1,0 +1,191 @@
+{
+  "report_timestamp": "2026-01-07T19:05:53.397265",
+  "summary": {
+    "total_transactions_analyzed": 8,
+    "critical_risk": 0,
+    "high_risk": 0,
+    "medium_risk": 1,
+    "low_risk": 7,
+    "overall_avg_fraud_score": 0.2411272268017632
+  },
+  "fraud_incidents": {
+    "total_incidents": 0,
+    "incidents": []
+  },
+  "indicator_effectiveness": {
+    "total_indicators": 8,
+    "indicator_analysis": [
+      [
+        "impossible_travel",
+        {
+          "occurrences": 1,
+          "high_risk_correlation": 0,
+          "medium_risk_correlation": 1,
+          "avg_confidence_when_triggered": 1.0,
+          "effectiveness_score": 0.5
+        }
+      ],
+      [
+        "country_shift",
+        {
+          "occurrences": 1,
+          "high_risk_correlation": 0,
+          "medium_risk_correlation": 1,
+          "avg_confidence_when_triggered": 0.6,
+          "effectiveness_score": 0.5
+        }
+      ],
+      [
+        "new_merchant",
+        {
+          "occurrences": 4,
+          "high_risk_correlation": 0,
+          "medium_risk_correlation": 1,
+          "avg_confidence_when_triggered": 0.3,
+          "effectiveness_score": 0.125
+        }
+      ],
+      [
+        "high_frequency_day",
+        {
+          "occurrences": 5,
+          "high_risk_correlation": 0,
+          "medium_risk_correlation": 1,
+          "avg_confidence_when_triggered": 1.0,
+          "effectiveness_score": 0.1
+        }
+      ],
+      [
+        "rapid_transactions",
+        {
+          "occurrences": 7,
+          "high_risk_correlation": 0,
+          "medium_risk_correlation": 1,
+          "avg_confidence_when_triggered": 0.3333333333333333,
+          "effectiveness_score": 0.07142857142857142
+        }
+      ],
+      [
+        "amount_anomaly",
+        {
+          "occurrences": 1,
+          "high_risk_correlation": 0,
+          "medium_risk_correlation": 0,
+          "avg_confidence_when_triggered": 1.0,
+          "effectiveness_score": 0.0
+        }
+      ],
+      [
+        "time_anomaly",
+        {
+          "occurrences": 3,
+          "high_risk_correlation": 0,
+          "medium_risk_correlation": 0,
+          "avg_confidence_when_triggered": 1.0,
+          "effectiveness_score": 0.0
+        }
+      ],
+      [
+        "category_deviation",
+        {
+          "occurrences": 1,
+          "high_risk_correlation": 0,
+          "medium_risk_correlation": 0,
+          "avg_confidence_when_triggered": 1.0,
+          "effectiveness_score": 0.0
+        }
+      ]
+    ]
+  },
+  "timeline_analysis": {
+    "dates_analyzed": 4,
+    "timeline": {
+      "2025-01-18": {
+        "total_transactions": 1,
+        "high_risk_count": 0,
+        "medium_risk_count": 0,
+        "avg_fraud_score": 0.1617559497407112
+      },
+      "2025-01-19": {
+        "total_transactions": 1,
+        "high_risk_count": 0,
+        "medium_risk_count": 0,
+        "avg_fraud_score": 0.29540229885057473
+      },
+      "2025-01-21": {
+        "total_transactions": 5,
+        "high_risk_count": 0,
+        "medium_risk_count": 1,
+        "avg_fraud_score": 0.2853753126984704
+      },
+      "2025-01-29": {
+        "total_transactions": 1,
+        "high_risk_count": 0,
+        "medium_risk_count": 0,
+        "avg_fraud_score": 0.04498300233046788
+      }
+    }
+  },
+  "merchant_analysis": {
+    "total_merchants": 8,
+    "high_fraud_merchants": [],
+    "all_merchants": {
+      "Whole Foods Market": {
+        "transaction_count": 1,
+        "fraud_count": 0,
+        "avg_fraud_score": 0.1617559497407112,
+        "category": "grocery",
+        "fraud_rate": 0.0
+      },
+      "Gucci Store": {
+        "transaction_count": 1,
+        "fraud_count": 0,
+        "avg_fraud_score": 0.29540229885057473,
+        "category": "retail",
+        "fraud_rate": 0.0
+      },
+      "Store 0": {
+        "transaction_count": 1,
+        "fraud_count": 0,
+        "avg_fraud_score": 0.16576578007161033,
+        "category": "retail",
+        "fraud_rate": 0.0
+      },
+      "Store 1": {
+        "transaction_count": 1,
+        "fraud_count": 0,
+        "avg_fraud_score": 0.16556642446597616,
+        "category": "retail",
+        "fraud_rate": 0.0
+      },
+      "Store 2": {
+        "transaction_count": 1,
+        "fraud_count": 0,
+        "avg_fraud_score": 0.17505954854379252,
+        "category": "retail",
+        "fraud_rate": 0.0
+      },
+      "Piccadilly Circus": {
+        "transaction_count": 1,
+        "fraud_count": 0,
+        "avg_fraud_score": 0.5005052588791923,
+        "category": "retail",
+        "fraud_rate": 0.0
+      },
+      "Casino Resort": {
+        "transaction_count": 1,
+        "fraud_count": 0,
+        "avg_fraud_score": 0.4199795515317806,
+        "category": "entertainment",
+        "fraud_rate": 0.0
+      },
+      "Caf\u00e9 in Paris": {
+        "transaction_count": 1,
+        "fraud_count": 0,
+        "avg_fraud_score": 0.04498300233046788,
+        "category": "restaurant",
+        "fraud_rate": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Fraud Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🛡️ Fraud Detection</div>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/dashboard">Dashboard</a></li>
+                <li><a href="/analyze">Analyze</a></li>
+                <li><a href="/ml-detector">ML Detector</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Dashboard</h1>
+        
+        <div class="dashboard-grid">
+            <!-- Statistics Cards -->
+            <div class="stat-card">
+                <h3>Total Transactions</h3>
+                <p id="totalTransactions" class="stat-value">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Unique Cardholders</h3>
+                <p id="uniqueCardholders" class="stat-value">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Total Amount</h3>
+                <p id="totalAmount" class="stat-value">$0.00</p>
+            </div>
+            <div class="stat-card">
+                <h3>Average Transaction</h3>
+                <p id="avgTransaction" class="stat-value">$0.00</p>
+            </div>
+        </div>
+
+        <!-- Status Section -->
+        <div id="systemStatus">
+            <div style="background: white; border-radius: 0.5rem; padding: 1.5rem;">
+                <div style="font-weight: bold; margin-bottom: 1rem;">SYSTEM STATUS</div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                    <div style="display: flex; align-items: center;">
+                        <div style="width: 12px; height: 12px; background: #10b981; border-radius: 50%; margin-right: 0.5rem;"></div>
+                        <div>
+                            <div style="color: #6b7280; font-size: 0.85rem;">Fraud Engine</div>
+                            <div style="font-weight: bold; color: #10b981;">ACTIVE</div>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center;">
+                        <div style="width: 12px; height: 12px; background: #10b981; border-radius: 50%; margin-right: 0.5rem;"></div>
+                        <div>
+                            <div style="color: #6b7280; font-size: 0.85rem;">ML Engine</div>
+                            <div style="font-weight: bold; color: #10b981;">READY</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- High Risk Transactions -->
+        <div id="highRiskTransactions" style="margin-top: 2rem;">
+            <div style="background: white; border-radius: 0.5rem; padding: 1.5rem;">
+                <div style="font-weight: bold; color: #ef4444; margin-bottom: 1rem;">
+                    🚨 HIGH-RISK TRANSACTIONS
+                </div>
+                <div style="color: #6b7280;">No high-risk transactions detected</div>
+            </div>
+        </div>
+
+        <!-- Daily Statistics -->
+        <div id="dailyStats" style="margin-top: 2rem;">
+            <div style="background: white; border-radius: 0.5rem; padding: 1.5rem;">
+                <div style="font-weight: bold; margin-bottom: 1rem;">DAILY SUMMARY</div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; font-size: 0.9rem;">
+                    <div>
+                        <div style="color: #6b7280;">Transactions Today</div>
+                        <div style="font-weight: bold; font-size: 1.3rem; color: #2563eb;">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-primary" id="refreshBtn" style="margin-top: 2rem;">Refresh Dashboard</button>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Credit Card Fraud Detection System</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+{
+  "analysis_timestamp": "2026-01-07T19:04:27.890065",
+  "total_transactions": 5,
+  "transactions": [
+    {
+      "transaction_id": "TX_FRAUD_001",
+      "cardholder_id": "CH001",
+      "fraud_score": 0.23793103448275865,
+      "risk_level": "LOW",
+      "fraud_indicators": {
+        "amount_anomaly": {
+          "triggered": true,
+          "confidence": 1.0
+        },
+        "time_anomaly": {
+          "triggered": true,
+          "confidence": 1.0
+        },
+        "rapid_transactions": {
+          "triggered": false,
+          "confidence": 0.0
+        },
+        "high_frequency_day": {
+          "triggered": false,
+          "confidence": 0.0
+        },
+        "impossible_travel": {
+          "triggered": false,
+          "confidence": 0.0
+        },
+        "country_shift": {
+          "triggered": false,
+          "confidence": 0.0
+        },
+        "category_deviation": {
+          "triggered": false,
+          "confidence": 0.0
+        },
+        "new_merchant": {
+          "triggered": true,
+          "confidence": 0.3
+        }
+      },
+      "recommendation": "APPROVE_TRANSACTION - Low fraud risk",
+      "details": {
+        "transaction_amount": 5000.0,
+        "merchant_name": "Best Buy",
+        "merchant_category": "retail",
+        "transaction_type": "purchase",
+        "country": "USA",
+        "timestamp": "2025-01-07T11:30:00",
+        "rapid_tx_count": 1,
+        "daily_tx_count": 0,
+        "impossible_travel_speed": 0.0
+      }
+    },
+    {
+      "transaction_id": "TX_FRAUD_002",
+      "cardholder_id": "CH001",
+      "fraud_score": 0.2289667556854731,
+      "risk_level": "LOW",
+      "fraud_indicators": {
+        "amount_anomaly": {
+          "triggered": false,
+          "confidence": 0.3350089787196797
+        },
+        "time_anomaly": {
+          "triggered": true,
+          "confidence": 1.0
+        },
+        "rapid_transactions": {
+          "triggered": false,
+          "confidence": 0.0
+        },
+        "high_frequency_day": {
+          "triggered": false,
+          "confidence": 0.0
+        },
+        "impossible_travel": {
+          "triggered": false,
+          "confidence": 0.0
+        },
+        "country_shift": {
+          "triggered": true,
+          "confidence": 0.6
+        },
+        "category_deviation": {
+          "triggered": false,
+          "confidence": 0.0
+        },
+        "new_merchant": {
+          "triggered": true,
+          "confidence": 0.3
+        }
+      },
+      "recommendation": "APPROVE_TRANSACTION - Low fraud risk",
+      "details": {
+        "transaction_amount": 150.0,
+        "merchant_name": "Harrods",
+        "merchant_category": "retail",
+        "transaction_type": "purchase",
+        "country": "UK",
+        "timestamp": "2025-01-07T11:35:00",
+        "rapid_tx_count": 1,
+        "daily_tx_count": 0,
+        "impossible_travel_speed": 336.79858760889795
+      }
+    },
+    {
+      "transaction_id": "TX_FRAUD_003",
+      "cardholder_id": "CH001",
+      "fraud_score": 0.26042266087999416,
+      "risk_level": "LOW",
+      "fraud_indicators": {
+        "amount_anomaly": {
+          "triggered": false,
+          "confidence": 0.07973095804662418
+        },
+        "time_anomaly": {
+          "triggered": false,
+          "confidence": 0.0
+        },
+        "rapid_transactions": {
+          "triggered": true,
+          "confidence": 0.6666666666666666
+        },
+        "high_frequency_day": {
+          "triggered": true,
+          "confidence": 1.0
+        },
+        "impossible_travel": {
+          "triggered": false,
+          "confidence": 0.0
+        },
+        "country_shift": {
+          "triggered": false,
+          "confidence": 0.0
+        },
+        "category_deviation": {
+          "triggered": false,
+          "confidence": 0.0
+        },
+        "new_merchant": {
+          "triggered": true,
+          "confidence": 0.3
+        }
+      },
+      "recommendation": "APPROVE_TRANSACTION - Low fraud risk",
+      "details": {
+        "transaction_amount": 110.0,
+        "merchant_name": "Store 5",
+        "merchant_category": "retail",
+        "transaction_type": "purchase",
+        "country": "USA",
+        "timestamp": "2025-01-07T14:05:00",
+        "rapid_tx_count": 4,
+        "daily_tx_count": 4,
+        "impossible_travel_speed": 0.0
+      }
+    },
+    {
+      "transaction_id": "TX_FRAUD_004",
+      "cardholder_id": "CH001",
+      "fraud_score": 0.42183908045977014,
+      "risk_level": "LOW",
+      "fraud_indicators": {
+        "amount_anomaly": {
+          "triggered": true,
+          "confidence": 1.0
+        },
+        "time_anomaly": {
+          "triggered": true,
+          "confidence": 1.0
+        },
+        "rapid_transactions": {
+          "triggered": true,
+          "confidence": 0.6666666666666666
+        },
+        "high_frequency_day": {
+          "triggered": false,
+          "confidence": 0.0
+        },
+        "impossible_travel": {
+          "triggered": false,
+          "confidence": 0.0
+        },
+        "country_shift": {
+          "triggered": false,
+          "confidence": 0.0
+        },
+        "category_deviation": {
+          "triggered": true,
+          "confidence": 1.0
+        },
+        "new_merchant": {
+          "triggered": true,
+          "confidence": 0.3
+        }
+      },
+      "recommendation": "APPROVE_TRANSACTION - Low fraud risk",
+      "details": {
+        "transaction_amount": 800.0,
+        "merchant_name": "Luxury Casino Resort",
+        "merchant_category": "entertainment",
+        "transaction_type": "purchase",
+        "country": "USA",
+        "timestamp": "2025-01-08T02:15:00",
+        "rapid_tx_count": 4,
+        "daily_tx_count": 0,
+        "impossible_travel_speed": 54.97220721309286
+      }
+    },
+    {
+      "transaction_id": "TX_LEGIT_001",
+      "cardholder_id": "CH001",
+      "fraud_score": 0.16704712125783927,
+      "risk_level": "LOW",
+      "fraud_indicators": {
+        "amount_anomaly": {
+          "triggered": false,
+          "confidence": 0.37775829578600134
+        },
+        "time_anomaly": {
+          "triggered": false,
+          "confidence": 0.0
+        },
+        "rapid_transactions": {
+          "triggered": true,
+          "confidence": 0.6666666666666666
+        },
+        "high_frequency_day": {
+          "triggered": false,
+          "confidence": 0.0
+        },
+        "impossible_travel": {
+          "triggered": false,
+          "confidence": 0.0
+        },
+        "country_shift": {
+          "triggered": false,
+          "confidence": 0.0
+        },
+        "category_deviation": {
+          "triggered": false,
+          "confidence": 0.0
+        },
+        "new_merchant": {
+          "triggered": false,
+          "confidence": 0.0
+        }
+      },
+      "recommendation": "APPROVE_TRANSACTION - Low fraud risk",
+      "details": {
+        "transaction_amount": 42.0,
+        "merchant_name": "Starbucks",
+        "merchant_category": "restaurant",
+        "transaction_type": "purchase",
+        "country": "USA",
+        "timestamp": "2025-01-08T10:30:00",
+        "rapid_tx_count": 4,
+        "daily_tx_count": 0,
+        "impossible_travel_speed": 0.0
+      }
+    }
+  ]
+}

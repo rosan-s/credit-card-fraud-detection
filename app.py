@@ -40,8 +40,13 @@ def initialize_system():
     # Initialize engines
     engine = FraudAnalysisEngine(history)
     ml_detector = MLFraudDetector(history)
+    report_generator = FraudAnalysisReportGenerator(engine)
     
     print("✓ System initialized")
+
+
+# Initialize system on module load (for gunicorn/production)
+initialize_system()
 
 
 def load_sample_transactions():
@@ -322,9 +327,6 @@ def internal_error(error):
 # ==================== STARTUP ====================
 
 if __name__ == '__main__':
-    print("Initializing Fraud Detection System...")
-    initialize_system()
-    
     print("\n" + "="*80)
     print("CREDIT CARD FRAUD DETECTION - WEB APPLICATION".center(80))
     print("="*80)

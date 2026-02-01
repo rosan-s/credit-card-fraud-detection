@@ -27,26 +27,6 @@ app.config['JSON_SORT_KEYS'] = False
 history = TransactionHistory()
 engine = None
 ml_detector = None
-report_generator = None
-
-
-def initialize_system():
-    """Initialize fraud detection system"""
-    global engine, ml_detector, report_generator
-    
-    # Load sample baseline transactions
-    load_sample_transactions()
-    
-    # Initialize engines
-    engine = FraudAnalysisEngine(history)
-    ml_detector = MLFraudDetector(history)
-    report_generator = FraudAnalysisReportGenerator(engine)
-    
-    print("✓ System initialized")
-
-
-# Initialize system on module load (for gunicorn/production)
-initialize_system()
 
 
 def load_sample_transactions():
@@ -71,6 +51,24 @@ def load_sample_transactions():
     
     for tx in transactions:
         history.add_transaction(tx)
+
+
+def initialize_system():
+    """Initialize fraud detection system"""
+    global engine, ml_detector
+    
+    # Load sample baseline transactions
+    load_sample_transactions()
+    
+    # Initialize engines
+    engine = FraudAnalysisEngine(history)
+    ml_detector = MLFraudDetector(history)
+    
+    print("✓ System initialized")
+
+
+# Initialize system on module load (for gunicorn/production)
+initialize_system()
 
 
 # ==================== WEB INTERFACE ROUTES ====================
